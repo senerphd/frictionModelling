@@ -1,7 +1,7 @@
 v = [-0.6:1e-4:0.6];
 
 v_data = v_mPs.Data; 
-F_friction_data = F_friction.Data; 
+F_friction_data = F_friction_N.Data; 
 plot(v_data,F_friction_data,'-')
 
 
@@ -10,7 +10,7 @@ plot(v_data,F_friction_data,'-')
 eps_smooth = 0.002; 
 
 % --- Pozitif Yön (v > 0) ---
-kv_p = 20; kc_p = 17; ks_p = 82.9; tau_p = 0.016;
+kv_p = 20; kc_p = 15; ks_p = 82.9; tau_p = 0.016;
 
 % --- Negatif Yön (v < 0) ---
 kv_n = 35; kc_n = 22; ks_n = 75.17; tau_n = 0.016;
